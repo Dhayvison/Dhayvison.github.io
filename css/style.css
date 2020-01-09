@@ -1,0 +1,8 @@
+.star{
+	background: url('../img/star.png');
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	float: right;
+}
