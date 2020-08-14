@@ -1,34 +1,70 @@
-body * {
-    transition: all 0.5s;
+::-webkit-scrollbar {
+	width: 0px;
 }
 
-a:link{
+body * {
+	transition: all 0.70710678118s;
+	transition-timing-function: ease;
+	scroll-behavior: smooth;
+}
+
+#main .row {
+	min-height: 100vh;
+}
+
+aside, section {
+	height: 100vh;
+	overflow: auto;
+}
+
+aside #actions button{
+	width: 3em;
+	height: 3em;
+}
+
+a {
 	text-decoration: none;
 }
 
-.star{
-	background: url('../img/star.png');
-	width: 20px;
-	height: 20px;
+#skills {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+.skill {
+	width: 9rem;
+	height: 10vh;
 	position: relative;
-	float: right;
+	color: gainsboro;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	border-radius: 5px;
+	
 }
 
-/* #objetivo p {
-	display: none;
-	height: 0;
+.skill:after {
+	background-color: goldenrod;
+	content: '' ;
+	width: 80%;
+	height: 5%;
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
 }
 
-#objetivo:hover p {
-	display: block;
-	height: auto;
-
+.skill[stars="4"]:after {
+	width: 64%;
 }
-
-#idiomas ul {
-	display: none;
+.skill[stars="3"]:after {
+	width: 48%;
 }
-
-#idiomas:hover ul {
-	display: block;
-} */
+.skill[stars="2"]:after {
+	width: 32%;
+}
+.skill[stars="1"]:after {
+	width: 16%;
+}

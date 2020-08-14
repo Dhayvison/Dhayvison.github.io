@@ -9,289 +9,162 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
 
-<body class="bg-dark">
+<body class="bg-secondary">
+	<div id="main" class="container-fluid p-0 m-0">
+		<div class="row g-0">
+			<aside class="col-lg-2 bg-dark text-light">
+				<img class="img img-fluid" src="img/photo.jpg">
+				<h5 class="lead text-center">Dhayvison Braga Mendonça</h5>
+				<p class="text-center">22 anos</p>
+				<div id="actions" class="d-flex justify-content-around mb-4">
+					<a href="mailto:dhayvisonbraga@gmail.com" target="_blank">
+						<button type="button" class="btn btn-dark rounded-circle" data-toggle="tooltip" data-placement="bottom" title="dhayvisonbraga@gmail.com">
+							<i class="far fa-envelope text-primary"></i>
+						</button>
+					</a>
+					<a href="https://api.whatsapp.com/send?phone=5585981024208" target="_blank">
+						<button type="button" class="btn btn-dark rounded-circle" data-toggle="tooltip" data-placement="bottom" title="(85) 98102-4208">
+							<i class="fab fa-whatsapp text-success"></i>
+						</button>
+					</a>
+					<a href="https://goo.gl/maps/3uTP9XU94x1XnJkm6" target="_blank">
+						<button type="button" class="btn btn-dark rounded-circle" data-toggle="tooltip" data-placement="bottom" title="Fortaleza - CE">
+							<i class="fas fa-map-marker-alt text-danger"></i>
+						</button>
+					</a>
+				</div>
+				
+				<div class="my-2">
+					<button disabled class="btn btn-dark btn-block btn-sm d-flex" type="button" data-toggle="collapse" data-target="#objetivo" aria-expanded="false" aria-controls="objetivo">
+						Objetivo
+						<i class="fas fa-angle-down ml-auto"></i>
+					</button>
+					<p class="collapse my-2 p-1" id="objetivo">
+						<strong>Estágio: </strong> Busco uma vivência das atividades em uma empresa de TI e a convivência com pessoas
+						com excelência no ramo de desenvolvimento de sistemas. Me dedicando ao aprendizado, para que
+						com ele possa agregar valor à empresa e gerar resultados positivos.
+					</p>
+				</div>
+				<div class="my-2">
+					<button class="btn btn-dark btn-block btn-sm d-flex" type="button" data-toggle="collapse" data-target="#idiomas" aria-expanded="false" aria-controls="idiomas">
+						Idiomas
+						<i class="fas fa-angle-down ml-auto"></i>
+					</button>
+					<div class="collapse my-2 p-1" id="idiomas">
+						<div class="m-1">
+							<img class="img mr-2" src="https://www.countryflags.io/GB/flat/16.png">
+							Inglês Básico
+						</div>
+						<div class="m-1">
+							<img class="img mr-2" src="https://www.countryflags.io/ES/flat/16.png">
+							Espanhol Básico
+						</div>
+						
+					</div>
+				</div>
+				<div class="my-2">
+					<button class="btn btn-dark btn-block btn-sm d-flex" type="button" data-toggle="collapse" data-target="#experiencia" aria-expanded="false" aria-controls="experiencia">
+						Profissional / Voluntário
+						<i class="fas fa-angle-down ml-auto"></i>
+					</button>
+					<div class="collapse my-2 p-1" id="experiencia">
+						<div class="m-1">
+							Trabalhos <i>freelancer</i> como designer de logomarca, papelaria e material publicitário para mídias digitais e impressas
+						</div>
+						<div class="m-1">
+							Como monitor de Química durante o ensino médio, coordenei experimentos em uma amostra de ciências
+						</div>
+					</div>
+				</div>
+			</aside>
 
-	<div style="position: absolute; z-index: -1; float: left; text-align: justify;" class="text-white-25">
-		01010100 01101000 01100101 00100000 01011010 01100101 01101110 00100000 01101111 01100110
-		00100000 01010000 01111001 01110100 01101000 01101111 01101110 00101100 00100000 01100010 01111001 00100000
-		01010100 01101001 01101101 01010000 01100101 01110100 01100101 01110010 01110011 00111010 00001010 01000010
-		01100101 01100001 01110101 01110100 01101001 01100110 01110101 01101100 00100000 01101001 01110011 00100000
-		01100010 01100101 01110100 01110100 01100101 01110010 00100000 01110100 01101000 01100001 01101110 00100000
-		01110101 01100111 01101100 01111001 00101110 00001010 01000101 01111000 01110000 01101100 01101001 01100011
-		01101001 01110100 00100000 01101001 01110011 00100000 01100010 01100101 01110100 01110100 01100101 01110010
-		00100000 01110100 01101000 01100001 01101110 00100000 01101001 01101101 01110000 01101100 01101001 01100011
-		01101001 01110100 00101110 00001010 01010011 01101001 01101101 01110000 01101100 01100101 00100000 01101001
-		01110011 00100000 01100010 01100101 01110100 01110100 01100101 01110010 00100000 01110100 01101000 01100001
-		01101110 00100000 01100011 01101111 01101101 01110000 01101100 01100101 01111000 00101110 00001010 01000011
-		01101111 01101101 01110000 01101100 01100101 01111000 00100000 01101001 01110011 00100000 01100010 01100101
-		01110100 01110100 01100101 01110010 00100000 01110100 01101000 01100001 01101110 00100000 01100011 01101111
-		01101101 01110000 01101100 01101001 01100011 01100001 01110100 01100101 01100100 00101110 00001010 01000110
-		01101100 01100001 01110100 00100000 01101001 01110011 00100000 01100010 01100101 01110100 01110100 01100101
-		01110010 00100000 01110100 01101000 01100001 01101110 00100000 01101110 01100101 01110011 01110100 01100101
-		01100100 00101110 00001010 01010011 01110000 01100001 01110010 01110011 01100101 00100000 01101001 01110011
-		00100000 01100010 01100101 01110100 01110100 01100101 01110010 00100000 01110100 01101000 01100001 01101110
-		00100000 01100100 01100101 01101110 01110011 01100101 00101110 00001010 01010010 01100101 01100001 01100100
-		01100001 01100010 01101001 01101100 01101001 01110100 01111001 00100000 01100011 01101111 01110101 01101110
-		01110100 01110011 00101110 00001010 01010011 01110000 01100101 01100011 01101001 01100001 01101100 00100000
-		01100011 01100001 01110011 01100101 01110011 00100000 01100001 01110010 01100101 01101110 00100111 01110100
-		00100000 01110011 01110000 01100101 01100011 01101001 01100001 01101100 00100000 01100101 01101110 01101111
-		01110101 01100111 01101000 00100000 01110100 01101111 00100000 01100010 01110010 01100101 01100001 01101011
-		00100000 01110100 01101000 01100101 00100000 01110010 01110101 01101100 01100101 01110011 00101110 00001010
-		01000001 01101100 01110100 01101000 01101111 01110101 01100111 01101000 00100000 01110000 01110010 01100001
-		01100011 01110100 01101001 01100011 01100001 01101100 01101001 01110100 01111001 00100000 01100010 01100101
-		01100001 01110100 01110011 00100000 01110000 01110101 01110010 01101001 01110100 01111001 00101110 00001010
-		01000101 01110010 01110010 01101111 01110010 01110011 00100000 01110011 01101000 01101111 01110101 01101100
-		01100100 00100000 01101110 01100101 01110110 01100101 01110010 00100000 01110000 01100001 01110011 01110011
-		00100000 01110011 01101001 01101100 01100101 01101110 01110100 01101100 01111001 00101110 00001010 01010101
-		01101110 01101100 01100101 01110011 01110011 00100000 01100101 01111000 01110000 01101100 01101001 01100011
-		01101001 01110100 01101100 01111001 00100000 01110011 01101001 01101100 01100101 01101110 01100011 01100101
-		01100100 00101110 00001010 01001001 01101110 00100000 01110100 01101000 01100101 00100000 01100110 01100001
-		01100011 01100101 00100000 01101111 01100110 00100000 01100001 01101101 01100010 01101001 01100111 01110101
-		01101001 01110100 01111001 00101100 00100000 01110010 01100101 01100110 01110101 01110011 01100101 00100000
-		01110100 01101000 01100101 00100000 01110100 01100101 01101101 01110000 01110100 01100001 01110100 01101001
-		01101111 01101110 00100000 01110100 01101111 00100000 01100111 01110101 01100101 01110011 01110011 00101110
-		00001010 01010100 01101000 01100101 01110010 01100101 00100000 01110011 01101000 01101111 01110101 01101100
-		01100100 00100000 01100010 01100101 00100000 01101111 01101110 01100101 00101101 00101101 00100000 01100001
-		01101110 01100100 00100000 01110000 01110010 01100101 01100110 01100101 01110010 01100001 01100010 01101100
-		01111001 00100000 01101111 01101110 01101100 01111001 00100000 01101111 01101110 01100101 00100000 00101101
-		00101101 01101111 01100010 01110110 01101001 01101111 01110101 01110011 00100000 01110111 01100001 01111001
-		00100000 01110100 01101111 00100000 01100100 01101111 00100000 01101001 01110100 00101110 00001010 01000001
-		01101100 01110100 01101000 01101111 01110101 01100111 01101000 00100000 01110100 01101000 01100001 01110100
-		00100000 01110111 01100001 01111001 00100000 01101101 01100001 01111001 00100000 01101110 01101111 01110100
-		00100000 01100010 01100101 00100000 01101111 01100010 01110110 01101001 01101111 01110101 01110011 00100000
-		01100001 01110100 00100000 01100110 01101001 01110010 01110011 01110100 00100000 01110101 01101110 01101100
-		01100101 01110011 01110011 00100000 01111001 01101111 01110101 00100111 01110010 01100101 00100000 01000100
-		01110101 01110100 01100011 01101000 00101110 00001010 01001110 01101111 01110111 00100000 01101001 01110011
-		00100000 01100010 01100101 01110100 01110100 01100101 01110010 00100000 01110100 01101000 01100001 01101110
-		00100000 01101110 01100101 01110110 01100101 01110010 00101110 00001010 01000001 01101100 01110100 01101000
-		01101111 01110101 01100111 01101000 00100000 01101110 01100101 01110110 01100101 01110010 00100000 01101001
-		01110011 00100000 01101111 01100110 01110100 01100101 01101110 00100000 01100010 01100101 01110100 01110100
-		01100101 01110010 00100000 01110100 01101000 01100001 01101110 00100000 01110010 01101001 01100111 01101000
-		01110100 00100000 01101110 01101111 01110111 00101110 00001010 01001001 01100110 00100000 01110100 01101000
-		01100101 00100000 01101001 01101101 01110000 01101100 01100101 01101101 01100101 01101110 01110100 01100001
-		01110100 01101001 01101111 01101110 00100000 01101001 01110011 00100000 01101000 01100001 01110010 01100100
-		00100000 01110100 01101111 00100000 01100101 01111000 01110000 01101100 01100001 01101001 01101110 00101100
-		00100000 01101001 01110100 00100111 01110011 00100000 01100001 00100000 01100010 01100001 01100100 00100000
-		01101001 01100100 01100101 01100001 00101110 00001010 01001001 01100110 00100000 01110100 01101000 01100101
-		00100000 01101001 01101101 01110000 01101100 01100101 01101101 01100101 01101110 01110100 01100001 01110100
-		01101001 01101111 01101110 00100000 01101001 01110011 00100000 01100101 01100001 01110011 01111001 00100000
-		01110100 01101111 00100000 01100101 01111000 01110000 01101100 01100001 01101001 01101110 00101100 00100000
-		01101001 01110100 00100000 01101101 01100001 01111001 00100000 01100010 01100101 00100000 01100001 00100000
-		01100111 01101111 01101111 01100100 00100000 01101001 01100100 01100101 01100001 00101110 00001010 01001110
-		01100001 01101101 01100101 01010011 01110000 01100001 01100011 01100101 01110011 00100000 01100001 01110010
-		01100101 00100000 01101111 01101110 01100101 00100000 01101000 01101111 01101110 01101011 01101001 01101110
-		01100111 00100000 01100111 01110010 01100101 01100001 01110100 00100000 01101001 01100100 01100101 01100001
-		00100000 00101101 00101101 00100000 01101100 01100101 01110100 00100111 01110011 00100000 01100100 01101111
-		00100000 01101101 01101111 01110010 01100101 00100000 01101111 01100110 00100000 01110100 01101000 01101111
-		01110011 01100101 00100001 00001010
+			<section class="col-lg-10 bg-secondary">
+				<div class="lead bg-danger p-2 shadow text-light">Habilidades</div>
+
+				<div id="skills" class="bg-dark py-4">
+					<div class="skill" stars=3> Java </div>
+					<div class="skill" stars=4> JavaScript </div>
+					<div class="skill" stars=3> React.Js </div>
+					<div class="skill" stars=2> Node.Js </div>
+					<div class="skill" stars=2> C </div>
+					<div class="skill" stars=1> C++ </div>
+					<div class="skill" stars=3> PHP </div>
+					<div class="skill" stars=2> Laravel </div>
+					<div class="skill" stars=1> Yii </div>
+					<div class="skill" stars=2> Android </div>
+					<div class="skill" stars=3> Banco de Dados </div>
+					<div class="skill" stars=4> SQL </div>
+					<div class="skill" stars=3> HTML 5 </div>
+					<div class="skill" stars=3> CSS </div>
+					<div class="skill" stars=4> Bootstrap 4 </div>
+					<div class="skill" stars=4> Pacote Office </div>
+				</div>
+
+				<div class="lead bg-success p-2 shadow text-light">Escolaridade</div>
+				<div id="schooling" class="bg-dark py-4">
+					<ul class="list-group list-group-flush rounded p-1 bg-dark">
+						<li class="list-group-item bg-dark text-light">
+							<h5>Ensino médio - 2015</h5>
+							<h6>E.E.M. Maria Iracema Uchôa Sales - Umirim - CE</h6>
+						</li>
+						<li class="list-group-item bg-dark text-light">
+							<h5>Android I: Crie sua app fantástica com Android Studio - Jan 2018</h5>
+							<h6>Alura</h6>
+						</li>
+						<li class="list-group-item bg-dark text-light">
+							<h5>Android II: Integração com apps e recursos do device - Fev 2018</h5>
+							<h6>Alura</h6>
+						</li>
+						<li class="list-group-item bg-dark text-light">
+							<h5>Android III: Aprimore sua app com Fragments, Google Maps e GPS - Fev 2018</h5>
+							<h6>Alura</h6>
+						</li>
+						<li class="list-group-item bg-dark text-light">
+							<h5>Seu 1º Emprego de T.I.: Vagas de Emprego de informática - Dez 2019</h5>
+							<h6>Udemy</h6>
+						</li>
+						<li class="list-group-item bg-dark text-light">
+							<h5>Desenvolvimento Web Completo 2019 - 20 cursos + 20 projetos - 78% completo</h5>
+							<h6>Udemy</h6>
+						</li>
+						<li class="list-group-item bg-dark text-light">
+							<h5>Git e contribuições para projetos Open Source - 26% completo</h5>
+							<h6>Udemy</h6>
+						</li>
+						<li class="list-group-item bg-dark text-light">
+							<h5>Curso Design Gráfico COMPLETO - 7 Cursos do Zero ao Avançado - 20% completo</h5>
+							<h6>Udemy</h6>
+						</li>
+
+					</ul>
+				</div>
+			</section>
+		</div>
 	</div>
-
-	<div class="container">
-		<header class="row align-items-center mb-md-3">
-			<div class="col-lg-2 bg-secondary text-center shadow">
-				<img class="my-3 img img-fluid rounded-circle" width="170" height="170" src="img/photo.jpg">
-			</div>
-			<div class="col p-4 bg-dark text-light rounded shadow">
-				<div class="display-4">Dhayvison Braga Mendonça</div>
-				<div class="lead my-3"> 22 anos - Estudante - Ciência da Computação</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item bg-dark text-light">
-						<i class="far fa-envelope text-primary"></i>
-						<a href="mailto:dhayvisonbraga@gmail.com" class="ml-2 text-light" target="_blank">
-							dhayvisonbraga@gmail.com
-						</a>
-					</li>
-					<li class="list-group-item bg-dark text-light">
-						<i class="fab fa-whatsapp text-success"></i>
-						<a href="https://api.whatsapp.com/send?phone=5585981024208" class="ml-2 text-light"
-							target="_blank">
-							(85) 98102-4208
-						</a>
-					</li>
-					<li class="list-group-item bg-dark text-light">
-						<i class="fas fa-map-marker-alt text-danger"></i>
-						<a href="https://goo.gl/maps/3uTP9XU94x1XnJkm6" class="ml-2 text-light" target="_blank">
-							Fortaleza - CE
-						</a>
-					</li>
-				</ul>
-			</div>
-
-		</header>
-
-		<section class="row">
-
-			<div class="col-lg-4 m-0 p-0 mb-md-3">
-				<div class="card bg-secondary mb-md-3">
-					<div class="card-body" id="objetivo">
-						<h4 class="card-title text-dark">
-							Objetivo
-							<i class="fas fa-angle-down float-right"></i>
-						</h4>
-						<p class="lead card-text text-light">
-							Estágio. Busco uma vivência das atividades em uma empresa de TI e a convivência com pessoas
-							com excelência no ramo de desenvolvimento de sistemas. Me dedicando ao aprendizado, para que
-							com ele possa agregar valor à empresa e gerar resultados positivos.
-						</p>
-					</div>
-				</div>
-				<div class="card bg-secondary mb-md-3">
-					<div class="card-body" id="idiomas">
-						<h4 class="card-title text-dark">
-							Idiomas
-							<i class="fas fa-angle-down float-right"></i>
-						</h4>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item bg-secondary text-light">
-								Inglês Básico
-								<img src="https://www.countryflags.io/GB/flat/16.png">
-							</li>
-							<li class="list-group-item bg-secondary text-light">
-								Espanhol Básico
-								<img src="https://www.countryflags.io/ES/flat/16.png">
-							</li>
-						</ul>
-
-					</div>
-				</div>
-
-				<div class="card bg-secondary">
-					<div class="card-body">
-						<h4 class="card-title text-dark">
-							Experiência Profissional / Voluntário
-							<i class="fas fa-angle-down float-right"></i>
-						</h4>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item bg-secondary text-light">
-								Trabalhos <i>freelancer</i> como designer de logomarca, papelaria e material
-								publicitário para mídias digitais e impressas
-							</li>
-							<li class="list-group-item bg-secondary text-light">
-								Como monitor de Química durante o ensino médio, coordenei experimentos em uma
-								amostra de ciências
-							</li>
-						</ul>
-
-					</div>
-				</div>
-
-			</div>
-
-			<div class="col-lg-8 m-0 p-0 pl-lg-2 mb-md-3">
-				<div class="card bg-dark" style="height: 100%">
-					<div class="card-body">
-						<h4 class="card-title text-info">Habilidades</h4>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item bg-dark text-light">
-								Lógica de Programação
-								<span class="star" style="width: 100px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								Java
-								<span class="star" style="width: 80px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								JavaScript
-								<span class="star" style="width: 80px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								C
-								<span class="star" style="width: 60px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								C++
-								<span class="star" style="width: 20px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								PHP
-								<span class="star" style="width: 60px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								Desenvolvimento Android
-								<span class="star" style="width: 60px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								Banco de Dados
-								<span class="star" style="width: 80px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								SQL
-								<span class="star" style="width: 80px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								HTML5
-								<span class="star" style="width: 80px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								CSS
-								<span class="star" style="width: 80px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								Bootstrap
-								<span class="star" style="width: 80px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								Suporte
-								<span class="star" style="width: 40px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								Pacote Office
-								<span class="star" style="width: 60px;"></span></li>
-							<li class="list-group-item bg-dark text-light">
-								Photoshop
-								<span class="star" style="width: 40px;"></span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="row mb-md-3">
-			<div class="col m-0 p-0">
-				<div class="card bg-secondary">
-					<div class="card-body">
-						<h4 class="card-title text-light">Escolaridade / Cursos</h4>
-						<ul class="list-group list-group-flush rounded p-1 bg-dark">
-							<li class="list-group-item bg-dark text-light">
-								<h5>Ensino médio - 2015</h5>
-								<h6>E.E.M. Maria Iracema Uchôa Sales - Umirim - CE</h6>
-							</li>
-							<li class="list-group-item bg-dark text-light">
-								<h5>Android I: Crie sua app fantástica com Android Studio - Jan 2018</h5>
-								<h6>Alura</h6>
-							</li>
-							<li class="list-group-item bg-dark text-light">
-								<h5>Android II: Integração com apps e recursos do device - Fev 2018</h5>
-								<h6>Alura</h6>
-							</li>
-							<li class="list-group-item bg-dark text-light">
-								<h5>Android III: Aprimore sua app com Fragments, Google Maps e GPS - Fev 2018</h5>
-								<h6>Alura</h6>
-							</li>
-							<li class="list-group-item bg-dark text-light">
-								<h5>Seu 1º Emprego de T.I.: Vagas de Emprego de informática - Dez 2019</h5>
-								<h6>Udemy</h6>
-							</li>
-							<li class="list-group-item bg-dark text-light">
-								<h5>Desenvolvimento Web Completo 2019 - 20 cursos + 20 projetos - 78% completo</h5>
-								<h6>Udemy</h6>
-							</li>
-							<li class="list-group-item bg-dark text-light">
-								<h5>Git e contribuições para projetos Open Source - 26% completo</h5>
-								<h6>Udemy</h6>
-							</li>
-							<li class="list-group-item bg-dark text-light">
-								<h5>Curso Design Gráfico COMPLETO - 7 Cursos do Zero ao Avançado - 20% completo</h5>
-								<h6>Udemy</h6>
-							</li>
-
-						</ul>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
-	</div>
-
-
 
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+	<script>
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
 
+		let skills = document.querySelector('#skills').children;
+		for (let element of skills){
+			element.classList.add("skill");
+			element.classList.add("shadow");
+		}
+
+		let foto = document.querySelector('img');
+		foto.classList.add("rounded-circle");
+		foto.classList.add("p-4");
+
+	</script>
 </body>
 
 </html>
