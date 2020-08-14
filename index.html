@@ -85,23 +85,26 @@
 			<section class="col-lg-10 bg-secondary">
 				<div class="lead bg-danger p-2 shadow text-light">Habilidades</div>
 
-				<div id="skills" class="bg-dark py-4">
-					<div class="skill" stars=3> Java </div>
-					<div class="skill" stars=4> JavaScript </div>
-					<div class="skill" stars=3> React.Js </div>
-					<div class="skill" stars=2> Node.Js </div>
-					<div class="skill" stars=2> C </div>
-					<div class="skill" stars=1> C++ </div>
-					<div class="skill" stars=3> PHP </div>
-					<div class="skill" stars=2> Laravel </div>
-					<div class="skill" stars=1> Yii </div>
-					<div class="skill" stars=2> Android </div>
-					<div class="skill" stars=3> Banco de Dados </div>
-					<div class="skill" stars=4> SQL </div>
-					<div class="skill" stars=3> HTML 5 </div>
-					<div class="skill" stars=3> CSS </div>
-					<div class="skill" stars=4> Bootstrap 4 </div>
-					<div class="skill" stars=4> Pacote Office </div>
+				<div id="skills" class="container-fluid bg-dark py-4">
+					<div class="row g-3">
+						<div class="skill col-md-3" stars=3> Java </div>
+						<div class="skill col-md-3" stars=4> JavaScript </div>
+						<div class="skill col-md-3" stars=3> React.Js </div>
+						<div class="skill col-md-3" stars=2> Node.Js </div>
+						<div class="skill col-md-3" stars=2> C </div>
+						<div class="skill col-md-3" stars=1> C++ </div>
+						<div class="skill col-md-3" stars=3> PHP </div>
+						<div class="skill col-md-3" stars=2> Laravel </div>
+						<div class="skill col-md-3" stars=1> Yii </div>
+						<div class="skill col-md-3" stars=2> Android </div>
+						<div class="skill col-md-3" stars=3> Banco de Dados </div>
+						<div class="skill col-md-3" stars=4> SQL </div>
+						<div class="skill col-md-3" stars=3> HTML 5 </div>
+						<div class="skill col-md-3" stars=3> CSS </div>
+						<div class="skill col-md-3" stars=4> Bootstrap 4 </div>
+						<div class="skill col-md-3" stars=2> Bootstrap 5 </div>
+						<div class="skill col-md-3" stars=4> Pacote Office </div>
+					</div>
 				</div>
 
 				<div class="lead bg-success p-2 shadow text-light">Escolaridade</div>
@@ -149,21 +152,27 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 	<script>
-		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
-		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-			return new bootstrap.Tooltip(tooltipTriggerEl)
-		})
+		(async() => {
+			function sleep(ms) {
+				return new Promise(resolve => setTimeout(resolve, ms));
+			}
 
-		let skills = document.querySelector('#skills').children;
-		for (let element of skills){
-			element.classList.add("skill");
-			element.classList.add("shadow");
-		}
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+				return new bootstrap.Tooltip(tooltipTriggerEl)
+			})
 
-		let foto = document.querySelector('img');
-		foto.classList.add("rounded-circle");
-		foto.classList.add("p-4");
+			let foto = document.querySelector('img');
+			foto.classList.add("rounded-circle");
+			foto.classList.add("p-4");
 
+			let skills = document.querySelector('#skills .row').children;
+			for (let element of skills){
+				await sleep(50);
+				element.classList.add("shadow");
+			}
+		})();
+		
 	</script>
 </body>
 
