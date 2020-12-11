@@ -8,17 +8,16 @@ body * {
 	scroll-behavior: smooth;
 }
 
-#main .row {
-	min-height: 100vh;
-}
-
-#skills .row {
-	min-height: auto;
-}
-
 aside, section {
+	position: relative;
 	height: 100vh;
 	overflow: auto;
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 aside #actions button{
@@ -26,8 +25,22 @@ aside #actions button{
 	height: 3em;
 }
 
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
 a {
 	text-decoration: none;
+}
+
+#main .row {
+	min-height: 100vh;
+}
+
+#skills .row {
+	min-height: auto;
 }
 
 .skill {
