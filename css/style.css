@@ -1,84 +1,96 @@
-::-webkit-scrollbar {
-	width: 0px;
+* {
+  transition: background 0.618s ease-in-out;
 }
 
-body * {
-	transition: all 0.70710678118s;
-	transition-timing-function: ease;
-	scroll-behavior: smooth;
+body {
+	overflow: overlay;
+  color: var(--bs-light);
 }
 
-aside, section {
-	position: relative;
-	height: 100vh;
-	overflow: auto;
+p {
+  max-width: 45vw;
+  min-width: 200px;
 }
 
-button {
+#actions a {
+	--size-action: 40px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+  margin: 4px;
+	width: var(--size-action);
+	height: var(--size-action);
 }
 
-aside #actions button{
-	width: 3em;
-	height: 3em;
+*:hover > ::-webkit-scrollbar {
+  display: initial;
 }
 
-footer {
-	position: fixed;
-	bottom: 0;
-	right: 0;
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  display: none;
 }
 
-a {
-	text-decoration: none;
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  /* background-color: var(--bb-palette-default, #000000); */
+  /* border-radius: 100px; */
+
+  /* background: rgba(0, 0, 0, 0.1); */
 }
 
-#main .row {
-	min-height: 100vh;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bs-primary, #0d6efd);
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: content-box;
 }
 
-#skills .row {
-	min-height: auto;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-warning, #ffc107);
+  border: 2px solid transparent;
+  background-clip: content-box;
 }
 
-.skill {
-	padding: 15px;
-	position: relative;
-	color: gainsboro;
-	border-radius: 5px;
+#contact {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 0;
 }
 
-.skill:after {
-	background-color: goldenrod;
-	content: attr(stars) '☆';
-	text-align: end;
-	font-size: 10pt;
-	line-height: 2rem;
-	width: 100%;
-	height: 5px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+#panel {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
-.skill[stars="4"]:after {
-	width: 80%;
-}
-.skill[stars="3"]:after {
-	width: 60%;
-}
-.skill[stars="2"]:after {
-	width: 40%;
-}
-.skill[stars="1"]:after {
-	width: 20%;
+#panel:before {
+  content: "";
+  position: absolute;
+  width: 50vw;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: url(../img/laptop-3214756.png) no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(-30deg);
 }
 
-@media (max-width: 991.98px) { 
-	aside, section {
-		height: auto;
-		overflow: auto;
-	}
+#panel img {
+  width: 50vw;
+  position: absolute;
+  bottom: 0;
+  transform: rotate(45deg);
 }
