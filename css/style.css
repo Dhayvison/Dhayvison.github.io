@@ -7,17 +7,11 @@ body {
   color: var(--bs-light);
 }
 
-p {
-  max-width: 45vw;
-  min-width: 200px;
-}
-
 #actions a {
 	--size-action: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  margin: 4px;
 	width: var(--size-action);
 	height: var(--size-action);
 }
@@ -63,34 +57,53 @@ p {
 }
 
 #panel {
-  height: 90vh;
+  height: 75vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
+}
+
+#panel h1 {
+  text-shadow: 1px 3px 2px rgba(150, 150, 150, 0.62);
+}
+
+#panel p {
+  max-width: 50%;
+  float: right;
 }
 
 #panel:before {
   content: "";
   position: absolute;
   width: 50vw;
+  min-width: 250px;
   height: 100%;
   bottom: 0;
   left: 0;
   z-index: -1;
   background: url(../img/laptop-3214756.png) no-repeat;
   background-size: contain;
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  -o-transform: rotate(30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
   transform: rotate(-30deg);
 }
 
-#panel img {
-  width: 50vw;
-  position: absolute;
-  bottom: 0;
-  transform: rotate(45deg);
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+  #panel:before {
+    display: none;
+  }
+
+  #actions {
+    align-items: center;
+	  justify-content: space-evenly;
+  }
+
+  #panel p {
+    max-width: unset;
+    
+  }
+
 }
