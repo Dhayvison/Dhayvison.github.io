@@ -101,7 +101,7 @@ body {
 }
 
 #skills div {
-  background-color: var(--bs-secondary);
+  background-color: var(--bs-gray-800);
   margin: 8px;
   padding: 16px;
   border-radius: 4px;
@@ -114,6 +114,10 @@ body {
 
 #skills img {
   max-width: 100px;
+}
+
+.card {
+  background-color: var(--bs-gray-800);
 }
 
 #carouselProjetos .carousel-inner .carousel-item .carousel-caption {
