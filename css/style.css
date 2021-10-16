@@ -93,11 +93,14 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   max-height: 50vh;
-
   overflow-x: auto;
 }
 
-#skills div{
+#skills * {
+  font-size: 1rem;
+}
+
+#skills div {
   background-color: var(--bs-secondary);
   margin: 8px;
   padding: 16px;
@@ -109,16 +112,17 @@ body {
   font-size: 2rem;
 }
 
-#carouselProjetos {
-  overflow: hidden;
+#skills img {
+  max-width: 100px;
 }
 
-#carouselProjetos .carousel-inner .carousel-item > *:first-child {
-  background-color: var(--bs-primary);
-  height: 400px;
-  margin: 8px;
-  padding: 16px;
-  border-radius: 8px;
+#carouselProjetos .carousel-inner .carousel-item .carousel-caption {
+  background: radial-gradient(circle, rgba(0,0,0,0.62) 0%, rgba(240,240,240,0) 71%);
+}
+
+#carouselProjetos .carousel-control-prev-icon,
+#carouselProjetos .carousel-control-next-icon {
+  filter: drop-shadow(3px 5px 3px rgba(0, 0, 0, 0.62));
 }
 
 @media (max-width: 1199.98px) {
