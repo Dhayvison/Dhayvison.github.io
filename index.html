@@ -16,6 +16,8 @@
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lightense-images@1.0.17/dist/lightense.min.js"></script>
+
 	<link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -73,14 +75,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="card bg-primary">
+					<div class="card bg-dark border-primary">
 						<div class="card-body">
 							<h4 class="card-title">
 								Estagiário
 							</h4>
-							<h6 class="card-subtitle mb-2">
+							<h6 class="card-subtitle mb-2 text-primary">
 								<p>Março/20 – Presente</p>
-								<a href="https://www.linkedin.com/company/secrelnet-inform-tica-ltda./" class="text-dark"
+								<a href="https://www.linkedin.com/company/secrelnet-inform-tica-ltda./" class="text-secondary"
 									target="_blank">
 									SecrelNet Informática Ltda.
 								</a>
@@ -90,9 +92,7 @@
 							<h6>Responsabilidades:</h6>
 							<ul>
 								<li>Manutenção e desenvolvimento de um sistema ERP em PHP sobre o framework Yii 1.1, Bootstrap 3, JQuery
-									e
-									SQL
-									Serve database;</li>
+									e SQL Serve database;</li>
 								<li>Desenvolvimento e manutenção de sistema de relatórios de backup com Laravel 7 e ReactJs;</li>
 							</ul>
 							</p>
@@ -187,7 +187,7 @@
 						<div class="card-header">
 							<h5 class="card-title">${project.name}</h5>
 						</div>
-						<img src="./img/${project.image}" class="card-img-top">
+						<img src="./img/${project.image}" class="card-img-top rounded shadow">
 						<div class="card-body">
 							<p class="card-text">${project.description}</p>
 						</div>
@@ -226,6 +226,18 @@
 		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 			return new bootstrap.Tooltip(tooltipTriggerEl)
 		});
+
+		window.addEventListener('load', function () {
+			Lightense('#projects img', {
+				time: 300,
+				padding: 40,
+				offset: 40,
+				keyboard: true,
+				cubicBezier: 'cubic-bezier(.2, 0, .1, 1)',
+				background: 'rgba(0, 0, 0, .62)',
+
+			});
+		}, false);
 	</script>
 </body>
 

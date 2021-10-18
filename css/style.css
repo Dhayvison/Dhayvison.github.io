@@ -143,8 +143,6 @@ body {
   }
 
   #panel p {
-    max-width: unset;
-    
+    max-width: unset; 
   }
-
 }
