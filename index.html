@@ -17,13 +17,16 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/lightense-images@1.0.17/dist/lightense.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+		integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body class="bg-dark pb-5">
-	<div id="contact" class="p-3 sticky-lg-top">
+	<section id="contact" class="py-3 sticky-lg-top">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-2 text-center mb-3 mb-lg-0">
@@ -49,12 +52,12 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<section id="panel" class="p-5">
+	<section id="panel">
 		<div class="container">
 			<div class="row align-items-end">
-				<div class="col text-end">
+				<div class="col text-end p-5">
 					<h1 class="display-1">Desenvolvedor Web</h1>
 					<h3 class="mb-5">Fullstack</h3>
 					<p>
@@ -152,7 +155,7 @@
 
 	<section class="mb-5">
 		<div id="projects" class="container">
-		 	<h3 class="text-secondary text-center mb-5">Projetos</h3>
+			<h3 class="text-secondary text-center mb-5">Projetos</h3>
 			<div class="row row-cols-1 row-cols-md-3"></div>
 		</div>
 	</section>
@@ -245,6 +248,17 @@
 				cubicBezier: 'cubic-bezier(.2, 0, .1, 1)',
 				background: 'rgba(0, 0, 0, .62)',
 			});
+
+			VanillaTilt.init(document.querySelectorAll("#skills > div.shadow"), {
+				reverse: true,
+				max: 10,
+				gyroscope: true,
+				gyroscopeMinAngleX: -45,
+				gyroscopeMaxAngleX: 45,
+				gyroscopeMinAngleY: -45,
+				gyroscopeMaxAngleY: 45,
+			});
+
 		}, false);
 	</script>
 </body>
