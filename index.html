@@ -222,6 +222,10 @@
 			el.dataset.bsPlacement = "bottom"
 		});
 
+		function resetPageZoom() {
+			document.body.style.zoom = (window.innerWidth / window.outerWidth);
+		}
+
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
 		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 			return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -235,9 +239,14 @@
 				keyboard: true,
 				cubicBezier: 'cubic-bezier(.2, 0, .1, 1)',
 				background: 'rgba(0, 0, 0, .62)',
-
+				afterHide: resetPageZoom,
+				// beforeHide: resetPageZoom,
 			});
 		}, false);
+
+		setTimeout(() => {
+			resetPageZoom();
+		}, 2000)
 	</script>
 </body>
 
