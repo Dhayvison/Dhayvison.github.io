@@ -20,6 +20,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
 		integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 
 	<link rel="stylesheet" href="./css/style.css">
 
@@ -170,28 +172,44 @@
 			{
 				name: 'CRM',
 				image: 'crm.jpeg',
-				description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil officia corporis, voluptatum tempore illo nisi incidunt officiis aliquid aliquam numquam molestias perferendis quia voluptas unde harum temporibus ducimus nemo repellat?',
+				description: 
+				`Sistema **CRM** em desenvolvimento.  
+				Comecei este projeto com o intuito de conhecer o _starter kit_ **Breeze** do **Laravel** mas acabei conhecendo muitas outras coisas. 
+				Nele utilizo a biblioteca **Inertia.js** para renderização _server-side_ de um _single page application_ em **React**.
+				O deploy é automático e utiliza testes automatizados _back-end_ para validação.
+				`,
 				repo: 'https://github.com/Dhayvison/crm',
 				page: 'http://crm-test-123.herokuapp.com/',
 			},
 			{
 				name: 'Bingo Go!',
 				image: 'bingo-go.jpeg',
-				description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil officia corporis, voluptatum tempore illo nisi incidunt officiis aliquid aliquam numquam molestias perferendis quia voluptas unde harum temporibus ducimus nemo repellat?',
+				description: 
+				`Gerenciador de sorteios.  
+				Este projeto roda inteiramente em _front_ salvando os dados no navegador do cliente.
+				Com ele você pode criar sorteios e gerar números aleatórios assim como acontece em um bingo. 
+				Utilizo **React** e **Redux** e o status da aplicação é persistente.
+				`,
 				repo: 'https://github.com/Dhayvison/bingogo',
 				page: 'https://bingogo.netlify.app/',
 			},
 			{
 				name: 'Happy!',
 				image: 'happy.jpeg',
-				description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil officia corporis, voluptatum tempore illo nisi incidunt officiis aliquid aliquam numquam molestias perferendis quia voluptas unde harum temporibus ducimus nemo repellat?',
+				description: 
+				`Este foi o projeto desenvolvido durante a 3ª NLW da RocketSeat.
+				Com ele você pode registrar e encontrar casas de Acolhimento institucional por meio de uma interface simples e amigável integrada ao Google Maps.
+				Este sistema foi construído em **Typescript** com **React**, e **Node JS** no back-end.
+				`,
 				repo: 'https://github.com/Dhayvison/happy-web',
 				page: 'https://nlw3-happy-web.netlify.app/',
 			},
 			{
 				name: 'Daily Scrum Order',
 				image: 'daily-scrum-order.jpeg',
-				description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum voluptates eius nihil, fugiat doloremque exercitationem? Provident qui officiis temporibus fuga aliquam quidem quaerat a. Incidunt, dolorem illum! Explicabo, numquam!',
+				description: 
+				`Este é um pequeno utilitário que define a ordem da _Daily Scrum_ feita pelo time de desenvolvimento da empresa onde trabalho.
+				`,
 				repo: 'https://github.com/Dhayvison/html-tests/blob/master/daily-scrum-order.html',
 				page: 'https://dhayvison.github.io/html-tests/daily-scrum-order.html',
 			}
@@ -206,7 +224,7 @@
 						</div>
 						<img src="./img/${project.image}" class="card-img-top rounded shadow">
 						<div class="card-body">
-							<p class="card-text">${project.description}</p>
+							<p class="card-text">${marked(project.description)}</p>
 						</div>
 						<div class="card-footer">
 							<a href="${project.page}" class="btn btn-primary" target="_blank">
