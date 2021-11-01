@@ -22,6 +22,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 
 	<link rel="stylesheet" href="./css/style.css">
@@ -65,9 +66,15 @@
 					<h3 class="mb-5">Fullstack</h3>
 					<p>
 						Olá!
-						Meu nome é Dhayvison Braga, tenho 23 anos e sou estudante de Ciência da Computação. Lorem ipsum dolor sit
-						amet consectetur, adipisicing elit. Culpa ducimus, placeat eum voluptate enim aliquid aliquam similique nam
-						possimus doloribus eius porro nulla odit rem qui sunt quisquam iste saepe.
+						Meu nome é Dhayvison Braga, tenho 23 anos e sou estudante de Ciência da Computação. Estou na área de
+						desenvolvimento web a <strong>2 anos</strong>.
+						Atualmente trabalho com <strong>PHP</strong> e <strong>Yii 1.1</strong> no desenvolvimento de um sistema <a
+							href="https://www.senior.com.br/sistema-erp-o-que-e-e-como-funciona" target="_blank"
+							rel="noopener noreferrer">ERP</a>.
+						Tenho experiência com projetos <strong>Javascript</strong> com <strong>React JS</strong> e com o framework
+						<strong>Laravel</strong>.
+						<br><br>
+						👨‍💻 🚀 🎸 🎧 🎮 💛
 					</p>
 				</div>
 			</div>
@@ -103,7 +110,8 @@
 							<ul>
 								<li>Manutenção e desenvolvimento de um sistema ERP em PHP sobre o framework Yii 1.1, Bootstrap 3, JQuery
 									e SQL Serve database;</li>
-								<li>Desenvolvimento e manutenção de sistema de relatórios de backup com Laravel 7 e ReactJs;</li>
+								<li>Desenvolvimento e manutenção de sistema de relatórios de backup com Laravel 7 e ReactJs associado a
+									um crawler Puppeter;</li>
 							</ul>
 							</p>
 						</div>
@@ -158,7 +166,10 @@
 
 	<section class="mb-5">
 		<div id="projects" class="container">
-			<h3 class="text-secondary text-center mb-5">Projetos</h3>
+			<h3 class="text-secondary text-center mb-5">Projetos <i class="fas fa-info-circle fa-xs" data-toggle="tooltip"
+					data-bs-placement="right"
+					title="Todos os projetos usam serviços de hospedagem gratuitos (Heroku, Netlify, Github Pages). Por isso, pode haver lentidão no carregamento das aplicações."></i>
+			</h3>
 			<div class="row row-cols-1 row-cols-md-3"></div>
 		</div>
 	</section>
@@ -168,28 +179,45 @@
 			{
 				name: 'CRM',
 				image: 'crm.jpeg',
-				description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil officia corporis, voluptatum tempore illo nisi incidunt officiis aliquid aliquam numquam molestias perferendis quia voluptas unde harum temporibus ducimus nemo repellat?',
+				description:
+					`Sistema **CRM** em desenvolvimento.  
+				Comecei este projeto com o intuito de conhecer o _starter kit_ **Breeze** do **Laravel** mas acabei conhecendo muitas outras coisas. 
+				Nele utilizo a biblioteca **Inertia.js** para renderização _server-side_ de um _single page application_ em **React**.
+				O deploy é feito na Heroku e utiliza testes automatizados _back-end_ para validação.  
+				<small class="text-muted">Este sistema foi projetado para _desktop_ e não está otimizado para telas pequenas</small>
+				`,
 				repo: 'https://github.com/Dhayvison/crm',
 				page: 'http://crm-test-123.herokuapp.com/',
 			},
 			{
 				name: 'Bingo Go!',
 				image: 'bingo-go.jpeg',
-				description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil officia corporis, voluptatum tempore illo nisi incidunt officiis aliquid aliquam numquam molestias perferendis quia voluptas unde harum temporibus ducimus nemo repellat?',
+				description:
+					`Gerenciador de sorteios.  
+				Este projeto roda inteiramente em _front_ salvando os dados no navegador do cliente.
+				Com ele você pode criar sorteios e gerar números aleatórios assim como acontece em um bingo. 
+				Utilizo **React** e **Redux** e o status da aplicação é persistente.
+				`,
 				repo: 'https://github.com/Dhayvison/bingogo',
 				page: 'https://bingogo.netlify.app/',
 			},
 			{
 				name: 'Happy!',
 				image: 'happy.jpeg',
-				description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil officia corporis, voluptatum tempore illo nisi incidunt officiis aliquid aliquam numquam molestias perferendis quia voluptas unde harum temporibus ducimus nemo repellat?',
+				description:
+					`Este foi o projeto desenvolvido durante a 3ª NLW da RocketSeat.
+				Com ele você pode registrar e encontrar casas de Acolhimento institucional por meio de uma interface simples e amigável integrada ao Google Maps.
+				Este sistema foi construído em **Typescript** com **React**, e **Node JS** no back-end.
+				`,
 				repo: 'https://github.com/Dhayvison/happy-web',
 				page: 'https://nlw3-happy-web.netlify.app/',
 			},
 			{
 				name: 'Daily Scrum Order',
 				image: 'daily-scrum-order.jpeg',
-				description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum voluptates eius nihil, fugiat doloremque exercitationem? Provident qui officiis temporibus fuga aliquam quidem quaerat a. Incidunt, dolorem illum! Explicabo, numquam!',
+				description:
+					`Este é um pequeno utilitário que define a ordem da _Daily Scrum_ feita pelo time de desenvolvimento da empresa onde trabalho.
+				`,
 				repo: 'https://github.com/Dhayvison/html-tests/blob/master/daily-scrum-order.html',
 				page: 'https://dhayvison.github.io/html-tests/daily-scrum-order.html',
 			}
@@ -204,7 +232,7 @@
 						</div>
 						<img src="./img/${project.image}" class="card-img-top rounded shadow">
 						<div class="card-body">
-							<p class="card-text">${project.description}</p>
+							<p class="card-text">${marked(project.description)}</p>
 						</div>
 						<div class="card-footer">
 							<a href="${project.page}" class="btn btn-primary" target="_blank">
