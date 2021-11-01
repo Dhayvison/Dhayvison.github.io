@@ -20,6 +20,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
 		integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
 	<link rel="stylesheet" href="./css/style.css">
 
@@ -260,6 +263,11 @@
 			});
 
 		}, false);
+
+		ScrollOut({
+			targets: '#projects .card',
+			once: true,
+		});
 	</script>
 </body>
 
