@@ -50,22 +50,6 @@ body {
   background-clip: content-box;
 }
 
-[data-scroll] {
-  transition: all 1s ease;
-}
-
-#projects [data-scroll="in"] {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-#projects [data-scroll="out"] {
-  opacity: 0;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
-}
-
 #contact {
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.1);
@@ -130,7 +114,6 @@ body {
   font-size: 2rem;
   transform-style: preserve-3d;
   transform: perspective(1000px);
-  transition: all 0.618s ease-out;
 }
 
 #skills div:hover * {
@@ -144,6 +127,7 @@ body {
 
 .card {
   background-color: var(--bs-gray-800);
+  opacity: 0;
 }
 
 #carouselProjetos .carousel-inner .carousel-item .carousel-caption {
