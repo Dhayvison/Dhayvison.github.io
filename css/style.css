@@ -3,17 +3,17 @@
 }
 
 body {
-	overflow: overlay;
+  overflow: overlay;
   color: var(--bs-light);
 }
 
 #actions a {
-	--size-action: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: var(--size-action);
-	height: var(--size-action);
+  --size-action: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-action);
+  height: var(--size-action);
 }
 
 *:hover > ::-webkit-scrollbar {
@@ -51,16 +51,16 @@ body {
 }
 
 [data-scroll] {
-  transition: all 1s;
+  transition: all 1s ease;
 }
 
-[data-scroll="in"] {
+#projects [data-scroll="in"] {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-[data-scroll="out"] {
+#projects [data-scroll="out"] {
   opacity: 0;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
@@ -101,7 +101,7 @@ body {
   -moz-transform: rotate(-30deg);
   -ms-transform: rotate(-30deg);
   -o-transform: rotate(-30deg);
-  animation: backInLeft 1s ease-in-out;
+  animation: fadeInRightCustom 1s ease-in-out;
 }
 
 #skills {
@@ -147,7 +147,11 @@ body {
 }
 
 #carouselProjetos .carousel-inner .carousel-item .carousel-caption {
-  background: radial-gradient(circle, rgba(0,0,0,0.62) 0%, rgba(240,240,240,0) 71%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.62) 0%,
+    rgba(240, 240, 240, 0) 71%
+  );
 }
 
 #carouselProjetos .carousel-control-prev-icon,
@@ -165,11 +169,11 @@ body {
 
   #actions {
     align-items: center;
-	  justify-content: space-evenly;
+    justify-content: space-evenly;
   }
 
   #panel p {
-    max-width: unset; 
+    max-width: unset;
   }
 }
 
@@ -190,6 +194,21 @@ body {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes fadeInRightCustom {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     transform: rotate(-30deg);
   }
 }
