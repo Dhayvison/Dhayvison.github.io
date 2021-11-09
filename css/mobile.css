@@ -1,0 +1,14 @@
+@media (max-width: 991.98px) {
+  #panel:before {
+    display: none;
+  }
+
+  #actions {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #panel p {
+    max-width: unset;
+  }
+}

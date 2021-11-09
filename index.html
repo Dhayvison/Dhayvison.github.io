@@ -23,9 +23,16 @@
 	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	/>
+	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css" integrity="sha512-5KJYgPF7pe0cdJAg/9X6UdHE5cN9fqjjIi8ASyIqlcsKZdHVouNRcweLGEdtrIJJxMn+GqwJBjAurCjWOvEdJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/global.css">
+	<link rel="stylesheet" href="./css/mobile.css">
 
 </head>
 
@@ -52,7 +59,7 @@
 					</div>
 				</div>
 				<div class="col-lg-2 text-center">
-					<span class="badge bg-info text-dark">Em construção</span>
+					<span class="badge bg-info text-dark shake-opacity" style="animation-duration: 2s">Em construção</span>
 				</div>
 			</div>
 		</div>
@@ -62,7 +69,7 @@
 		<div class="container">
 			<div class="row align-items-end">
 				<div class="col text-end p-5">
-					<h1 class="display-1">Desenvolvedor Web</h1>
+					<h1 class="display-1 animate__animated animate__fadeInRight">Desenvolvedor Web</h1>
 					<h3 class="mb-5">Fullstack</h3>
 					<p>
 						Olá!
@@ -74,6 +81,7 @@
 						Tenho experiência com projetos <strong>Javascript</strong> com <strong>React JS</strong> e com o framework
 						<strong>Laravel</strong>.
 						<br><br>
+
 						👨‍💻 🚀 🎸 🎧 🎮 💛
 					</p>
 				</div>
@@ -224,10 +232,10 @@
 			}
 		];
 
-		projects.forEach(project => {
+		projects.forEach((project, index) => {
 			$('#projects div.row').append(`
 				<div class="col mb-4">
-					<div class="card shadow">
+					<div class="card shadow" data-delay=${500 * index}>
 						<div class="card-header">
 							<h5 class="card-title">${project.name}</h5>
 						</div>
@@ -296,6 +304,10 @@
 		ScrollOut({
 			targets: '#projects .card',
 			once: true,
+			onShown(el) {
+				el.classList.add('animate__animated', 'animate__fadeInUp');
+			},
+			threshold: 0.618
 		});
 	</script>
 </body>
