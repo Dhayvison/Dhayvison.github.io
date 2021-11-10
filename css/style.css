@@ -83,5 +83,5 @@
 
 #projects .card {
   background-color: var(--bs-gray-800);
-  opacity: 0;
+  /* opacity: 0; */
 }
