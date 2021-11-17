@@ -40,7 +40,7 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-2 text-center mb-3 mb-lg-0">
-					<img class="img img-fluid rounded-circle" style="height: 80px;" src="./img/photo.jpg" alt="Foto rosto">
+					<img class="img img-fluid rounded-circle" loading="lazy" style="height: 80px;" src="./img/photo.jpg" alt="Foto rosto">
 				</div>
 				<div class="col-lg-8 mb-3 mb-lg-0">
 					<h5 class="text-center text-lg-start ms-2">Dhayvison</h5>
@@ -169,7 +169,7 @@
 		skills.forEach(skill => {
 			$('#skills').append(`
 			<div class="shadow">
-				<img src="./img/${skill.image}" alt="${skill.title}" class="img img-fluid mb-2">
+				<img src="./img/${skill.image}" alt="${skill.title}" loading="lazy" class="img img-fluid mb-2">
 				<strong>${skill.title}</strong>
 			</div>
 			`)
@@ -243,7 +243,7 @@
 						<div class="card-header">
 							<h5 class="card-title">${project.name}</h5>
 						</div>
-						<img src="./img/${project.image}" class="card-img-top rounded shadow">
+						<img src="./img/${project.image}" alt="${project.name}" loading="lazy" class="card-img-top rounded shadow">
 						<div class="card-body">
 							<p class="card-text">${marked.parse(project.description)}</p>
 						</div>
