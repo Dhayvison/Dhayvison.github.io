@@ -21,7 +21,7 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js"
 		integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO"
 		crossorigin="anonymous"></script>
-	<script async src="https://code.jquery.com/jquery-3.6.0.min.js"
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/lightense-images@1.0.17/dist/lightense.min.js"></script>
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
@@ -29,7 +29,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script async src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
-	<script async src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<link rel="stylesheet" href="./css/animate.min.css" />
 	<link rel="stylesheet" type="text/css" href="./css/csshake.min.css">
 
@@ -132,7 +132,7 @@
 								</a>
 								<h6><i>Fortaleza - Ceará, Brazil</i></h6>
 							</h6>
-							<p class="card-text">
+							
 							<h6>Responsabilidades:</h6>
 							<ul>
 								<li>Manutenção e desenvolvimento de um sistema ERP em PHP sobre o framework Yii 1.1, Bootstrap 3, JQuery
@@ -140,7 +140,7 @@
 								<li>Desenvolvimento e manutenção de sistema de relatórios de backup com Laravel 7 e ReactJs associado a
 									um crawler Puppeter;</li>
 							</ul>
-							</p>
+							
 						</div>
 					</div>
 				</div>
@@ -317,15 +317,6 @@
 			});
 
 		}, false);
-
-		ScrollOut({
-			targets: '#projects .card',
-			once: true,
-			onShown(el) {
-				// el.classList.add('animate__animated', 'animate__fadeIn');
-			},
-			threshold: 0.618
-		});
 	</script>
 </body>
 
