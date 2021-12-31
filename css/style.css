@@ -85,3 +85,28 @@
   background-color: var(--bs-gray-800);
   /* opacity: 0; */
 }
+
+.experience-card {
+  border-left: 2px solid var(--bs-primary);
+  position: relative;
+  transition: opacity, margin 0.2s ease-out;
+  opacity: 0.5;
+}
+
+.experience-card:hover {
+  opacity: 1;
+  margin-left: 20px;
+}
+
+.experience-card::before {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: var(--bs-dark);
+  border-radius: 100%;
+  border: 2px solid var(--bs-primary);
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: -6px;
+}
