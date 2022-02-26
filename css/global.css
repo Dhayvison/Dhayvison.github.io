@@ -40,3 +40,7 @@ body {
   border: 2px solid transparent;
   background-clip: content-box;
 }
+
+footer a {
+  text-decoration: none;
+}
