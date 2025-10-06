@@ -20,10 +20,19 @@
   position: relative;
 }
 
-#panel p {
+/* #panel p {
   max-width: 50%;
   float: right;
   line-height: 1.7rem;
+} */
+
+#presentation {
+  margin-top: 80px;
+}
+
+#panel #presentation {
+  text-align: right;
+  max-width: 50%;
 }
 
 #panel:before {
@@ -32,8 +41,8 @@
   width: 50vw;
   min-width: 250px;
   height: 100%;
-  bottom: 0;
-  left: 0;
+  top: 50px;
+  left: 100px;
   z-index: -1;
   background: url(../img/laptop-3214756.png) no-repeat;
   background-size: contain;
@@ -42,6 +51,10 @@
   -ms-transform: rotate(-30deg);
   -o-transform: rotate(-30deg);
   animation: fadeInRightCustom 1s ease-in-out;
+}
+
+#presentation a {
+  margin-top: 24px;
 }
 
 #skills {
@@ -89,14 +102,9 @@
 .experience-card {
   border-left: 2px solid var(--bs-primary);
   position: relative;
-  transition: opacity, margin 0.2s ease-out;
-  opacity: 0.5;
+  transition: margin 0.2s ease-out;
 }
 
-.experience-card:hover {
-  opacity: 1;
-  margin-left: 20px;
-}
 
 .experience-card::before {
   content: "";

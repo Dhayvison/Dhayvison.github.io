@@ -11,4 +11,14 @@
   #panel p {
     max-width: unset;
   }
+
+  #panel #presentation {
+    text-align: right;
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  #contact .container {
+    margin-top: 16px;
+  }
 }
